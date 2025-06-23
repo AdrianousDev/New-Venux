@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --color-branco: #fafafa;
+  --color-laranja-1: #e77500;
+  --color-laranja-2: #814100;
+  --color-preto: #141414;
+  --color-grafite: #292929;
+  --color-cinza: #e0e0e0;
+
+  --animate-slide-in: slideIn 0.4s ease-in-out forwards;
+  --animate-fade-in: fadeIn 0.4s ease-in-out forwards;
+
+  --font-sans: "Roboto", "DM Sans", "system-ui", "sans-serif";
+  --font-serif: "Roboto Slab", "DM Serif Text", "Georgia", "serif";
+
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@utility container {
+  margin: 0 auto;
+  padding: 0 0.5rem;
+  @media (width >= 40rem) {
+    padding: 0 1rem;
+  }
+}
+
+@utility font-serif {
+  font-weight: bold;
+}
+
+@utility animate-1 {
+  animation-delay: 100ms;
+}
+@utility animate-2 {
+  animation-delay: 200ms;
+}
+@utility animate-3 {
+  animation-delay: 300ms;
+}
+@utility animate-4 {
+  animation-delay: 400ms;
+}
+
+@layer components {
+  .corpo-texto {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    color: #fff;
+  }
+  .titulo-texto {
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    color: #fff;
+  }
+  .btn {
+    @apply rounded-full bg-linear-to-b from-laranja-1 to-laranja-2 px-5 py-2 text-white transition animate-fade-in animate-1 cursor-pointer;
+    box-shadow: 0 1px 4px 1px rgba(var(--color-verde-200), 0.25),
+      inset 0px -1px 2px var(--color-verde-200);
+  }
+  .input {
+    @apply rounded-md border-2 border-preto bg-preto p-2 text-white focus:outline-none focus:ring-2 focus:ring-laranja-1 focus:border-laranja-2 placeholder:text-laranja-2/70;
+  }
+  .detalhe {
+    @apply bg-laranja-1;
+    width: 20px;
+    height: 2px;
+  }
+  .radial-gradient {
+    @apply bg-radial-[50%_100%_at_50%_0%] from-grafite to-preto;
+  }
+}
