@@ -52,17 +52,17 @@
   <!-- banner -->
   <main class="container">
     <div class="relative px-8 pb-8 pt-64 bg-gradient-to-t from-black/80 text-white rounded-2xl overflow-hidden max-sm:px-4 max-sm:pt-12">
-      <img class="absolute inset-0 size-full object-cover -z-10" src="./img/floresta.jpg" alt="">
-      <!-- <video id="video" src="./img/video_venux.mp4" width="1280" height="720" muted autoplay playsinline loop class="absolute inset-0 size-full object-cover -z-10 animate-fade-in"></video> -->
+      <!-- <img class="absolute inset-0 size-full object-cover -z-10" src="./img/floresta.jpg" alt=""> -->
+      <video id="video" src="./img/video_venux.mp4" width="1280" height="720" muted autoplay playsinline loop class="absolute inset-0 size-full object-cover -z-10 animate-fade-in"></video>
       <div class="bg-black/60 sm:bg-black sm:inline-flex sm:flex-row rounded-xl flex flex-col items-start gap-2 p-4 mb-8 sm:gap-8 sm:items-center sm:py-1 sm:pl-4 pr-1 sm:rounded-full">
         entrega grátis em Itajaí e região
-        <a href="./pages/solicitar-orcamento" class="btn text-black inline-flex items-center gap-2">Orçamento
+        <a href="./pages/solicitar-orcamento" class="btn text-white inline-flex items-center gap-2">Orçamento
           <img src="./img/seta.svg" alt="">
         </a>
       </div>
       <h1 class="mb-8 sm:mb-20 titulo-texto text-balance max-w-screen-sm text-4xl sm:text-5xl capitalize">Sua porta, seu cartão de visitas</h1>
-      <div class="text-xl max-sm:text-sm sm:flex justify-between items-end">
-        <p class="max-sm:mb-4">A mais de 18 anos no mercado</p>
+      <div class="sm:flex justify-between items-end">
+        <p class="max-sm:mb-4 text-sm">A mais de 18 anos no mercado</p>
       </div>
     </div>
   </main>
@@ -81,14 +81,20 @@
       </ul>
     </div>
     <div class="grid gap-4 sm:gap-8">
-      <div class="col-span-full grid grid-cols-2 relative">
-        <img src="./img/capachos.jpg" alt="Capachos de Vinil/PVC" class="h-80 w-full object-cover rounded-l-xl">
-        <img src="./img/capacho-poly.jpg" alt="Capachos PolyAgua" class="h-80 w-full object-cover rounded-r-xl">
-        <span class="lowercase text-white rounded-xl bg-black/50 px-4 py-2 text-3xl/none self-center justify-self-center m-2 absolute">Tipos de Materiais</span>
+      <div class="col-span-full grid grid-cols-1 relative lg:grayscale lg:hover:grayscale-0 overflow-hidden rounded-xl *:*:transition-transform hover:*:*:scale-110">
+        <a href="./pages/produtos.html">
+          <img src="./img/capachos.jpg" alt="Capachos de Vinil/PVC" class="h-40 w-full object-cover rounded-l-xl">
+        </a>
+        <a href="./pages/produtos.html">
+          <img src="./img/capacho-poly.jpg" alt="Capachos PolyAgua" class="h-40 w-full object-cover rounded-r-xl">
+        </a>
+        <span class="max-[350px]:text-xl lowercase text-white rounded-xl bg-black/50 px-4 py-2 text-3xl/none self-center justify-self-center m-2 absolute">Tipos de Materiais</span>
       </div>
-      <div class="col-span-full grid relative">
-        <img src="./img/capacho-personalizados.webp" alt="Capachos de Vinil/PVC" class="h-80 w-full object-cover rounded-l-xl">
-        <span class="lowercase text-white rounded-xl bg-black/50 px-4 py-2 text-3xl/none self-center justify-self-center m-2 absolute">Personalizados</span>
+      <div class="col-span-full grid relative lg:grayscale lg:hover:grayscale-0 overflow-hidden rounded-xl">
+        <a href="./pages/produtos.html">
+          <img src="./img/capacho-personalizados.webp" alt="Capachos de Vinil/PVC" class="h-80 w-full object-cover rounded-xl transition-transform hover:scale-110">
+        </a>
+        <span class="max-[350px]:text-xl lowercase text-white rounded-xl bg-black/50 px-4 py-2 text-3xl/none self-center justify-self-center m-2 absolute">Personalizados</span>
       </div>
     </div>
   </section>
