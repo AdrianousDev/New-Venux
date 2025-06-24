@@ -4,29 +4,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="./favicon.svg" type="image/svg">
-  <title>New Venux - Capachos Personalizados</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg">
+  <title>New Venux - Produtos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link href="./output.css" rel="stylesheet">
+  <link href="../output.css" rel="stylesheet">
 </head>
 
 <body class="bg-preto font-sans">
 
   <!-- header -->
   <header class="container flex items-center justify-between gap-8 p-8">
-    <a href="./">
-      <img src="./img/venux-logo.svg" alt="New Venux">
+    <a href="../">
+      <img src="../img/venux-logo.svg" alt="New Venux">
     </a>
     <nav id="mobile-menu" class="lg:block hidden items-center z-40 max-lg:fixed max-lg:w-full max-lg:inset-0">
       <div class="fixed lg:hidden inset-0 bg-black/40 backdrop-blur-md"></div>
       <ul class="text-white text-2xl max-lg:divide-y-2 max-lg:divide-white/10 max-lg:z-50 max-lg:absolute max-lg:p-8 max-lg:w-full lg:text-xl lg:flex lg:flex-wrap lg:gap-8">
         <li class="animate-slide-in opacity-0 animate-1">
-          <a href="./" class="max-lg:hover:bg-white/10 lg:underline lg:underline-offset-8 decoration-laranja-1 p-4 lg:px-0 lg:py-2 block">Home</a>
+          <a href="../" class="max-lg:hover:bg-white/10 lg:hover:underline lg:underline-offset-8 decoration-laranja-1 p-4 lg:px-0 lg:py-2 block">Home</a>
         </li>
         <li class="animate-slide-in opacity-0 animate-2">
-          <a href="./pages/produtos.html" class="max-lg:hover:bg-white/10 lg:hover:underline hover:underline-offset-8 decoration-laranja-1 p-4 lg:px-0 lg:py-2 block">Produtos</a>
+          <a href="./produtos.html" class="max-lg:hover:bg-white/10 lg:hover:underline lg:underline lg:underline-offset-8 decoration-laranja-1 p-4 lg:px-0 lg:py-2 block">Produtos</a>
         </li>
         <li class="animate-slide-in opacity-0 animate-3">
           <a href="./pages/sobre-nos" class="max-lg:hover:bg-white/10 lg:hover:underline hover:underline-offset-8 decoration-laranja-1 p-4 lg:px-0 lg:py-2 block">Sobre Nós</a>
@@ -49,77 +49,77 @@
     </button>
   </header>
 
-  <!-- banner -->
-  <main class="container">
-    <div class="relative px-8 pb-8 pt-64 bg-gradient-to-t from-black/80 text-white rounded-2xl overflow-hidden max-sm:px-4 max-sm:pt-12">
-      <img class="absolute inset-0 size-full object-cover -z-10" src="./img/floresta.jpg" alt="">
-      <!-- <video id="video" src="./img/video_venux.mp4" width="1280" height="720" muted autoplay playsinline loop class="absolute inset-0 size-full object-cover -z-10 animate-fade-in"></video> -->
-      <div class="bg-black/60 sm:bg-black sm:inline-flex sm:flex-row rounded-xl flex flex-col items-start gap-2 p-4 mb-8 sm:gap-8 sm:items-center sm:py-1 sm:pl-4 pr-1 sm:rounded-full">
-        entrega grátis em Itajaí e região
-        <a href="./pages/solicitar-orcamento" class="btn text-black inline-flex items-center gap-2">Orçamento
-          <img src="./img/seta.svg" alt="">
-        </a>
-      </div>
-      <h1 class="mb-8 sm:mb-20 titulo-texto text-balance max-w-screen-sm text-4xl sm:text-5xl capitalize">Sua porta, seu cartão de visitas</h1>
-      <div class="text-xl max-sm:text-sm sm:flex justify-between items-end">
-        <p class="max-sm:mb-4">A mais de 18 anos no mercado</p>
-      </div>
-    </div>
-  </main>
-
-  <!-- Ambiente Limpo -->
-  <section id="ambiente-limpo" class="radial-gradient container grid lg:grid-cols-[2fr_3fr] gap-8 pt-16 mb-12 sm:mb-16">
-    <div class="content-end bg-[url('./img/pintura.svg')] bg-no-repeat bg-contain bg-left-bottom">
-      <h2 class="text-white text-4xl mb-8 lg:text-5xl font-serif">Ambiente Limpo</h2>
-      <ul class="text-cinza *:flex *:items-center *:gap-4 grid gap-4 sm:text-xl">
-        <li><span class="h-0.5 w-6 detalhe inline-block"></span>Entradas Comerciais</li>
-        <li><span class="h-0.5 w-6 detalhe inline-block"></span>Condomínios</li>
-        <li><span class="h-0.5 w-6 detalhe inline-block"></span>Elevadores</li>
-        <li><span class="h-0.5 w-6 detalhe inline-block"></span>Lugares Molhados</li>
-        <li><span class="h-0.5 w-6 detalhe inline-block"></span>Casas</li>
-        <li><span class="h-0.5 w-6 detalhe inline-block"></span>Veículos</li>
-      </ul>
-    </div>
-    <div class="grid gap-4 sm:gap-8">
-      <div class="col-span-full grid grid-cols-2 relative">
-        <img src="./img/capachos.jpg" alt="Capachos de Vinil/PVC" class="h-80 w-full object-cover rounded-l-xl">
-        <img src="./img/capacho-poly.jpg" alt="Capachos PolyAgua" class="h-80 w-full object-cover rounded-r-xl">
-        <span class="lowercase text-white rounded-xl bg-black/50 px-4 py-2 text-3xl/none self-center justify-self-center m-2 absolute">Tipos de Materiais</span>
-      </div>
-      <div class="col-span-full grid relative">
-        <img src="./img/capacho-personalizados.webp" alt="Capachos de Vinil/PVC" class="h-80 w-full object-cover rounded-l-xl">
-        <span class="lowercase text-white rounded-xl bg-black/50 px-4 py-2 text-3xl/none self-center justify-self-center m-2 absolute">Personalizados</span>
-      </div>
+  <!-- tittle -->
+  <section class="container xl:flex max-xl:text-center mb-12">
+    <div>
+      <h1 class="text-4xl sm:text-5xl text-cinza-2 font-serif mb-2">Tipos de Materiais</h1>
+      <p class="max-sm:text-sm text-cinza-2 xl:text-center font-sans">Diferentes materiais, para diferentes necessidades.</p>
     </div>
   </section>
 
-  <!-- Sua porta, seu cartão de visita -->
-  <section id="do-seu-jeito" class="mb-12 sm:mb-16 py-12 sm:py-16 bg-grafite">
-    <div class="container">
-      <p class="mb-4 text-center text-laranja-1 uppercase tracking-widest text-sm">PERSONALIZADO DO SEU JEITO</p>
-      <h2 class="mb-8 mx-auto text-balance font-serif text-center max-w-screen-md text-white text-4xl sm:text-6xl">Sua Porta, Seu Cartão de Visitas</h2>
-      <div class="overflow-x-auto snap-x snap-mandatory pb-4 grid grid-cols-[repeat(4,minmax(300px,1fr))] gap-4 sm:gap-8">
-        <div class="grid snap-center gap-4 bg-preto p-6 sm:p-8 rounded-xl text-center">
-          <img class="justify-self-center" src="./img/trena-icon.svg" alt="">
-          <h3 class="text-white text-2xl font-serif">Medidas Exatas</h3>
-          <p class="text-gray-300 text-balance text-xl">Tamanhos e recortes para qualquer área. Medidas tiradas no local desejado.</p>
-        </div>
-        <div class="grid snap-center gap-4 bg-preto p-6 sm:p-8 rounded-xl text-center">
-          <img class="justify-self-center" src="./img/frete-icon.svg" alt="">
-          <h3 class="text-white text-2xl font-serif">Frete Grátis Itajaí e Região</h3>
-          <p class="text-gray-300 text-balance text-xl">Vendedores nas principais cidades do vale do Itajaí. Frete Grátis para a região.</p>
-        </div>
-        <div class="grid snap-center gap-4 bg-preto p-6 sm:p-8 rounded-xl text-center">
-          <img class="justify-self-center" src="./img/durabilidade-icon.svg" alt="">
-          <h3 class="text-white text-2xl font-serif">Durabilidade Única</h3>
-          <p class="text-gray-300 text-balance text-xl">Personalização profissional. Camada de tinta mais profunda. Material Resistente.</p>
-        </div>
-        <div class="grid snap-center gap-4 bg-preto p-6 sm:p-8 rounded-xl text-center">
-          <img class="justify-self-center" src="./img/pincel-icon.svg" alt="">
-          <h3 class="text-white text-2xl font-serif">Sua Logo, Sua marca</h3>
-          <p class="text-gray-300 text-balance text-xl">Layouts para pré-visualização e ajuda na escolha da personalização.</p>
-        </div>
+  <!-- Vinil / PVC -->
+  <section class="mb-12 container flex max-xl:flex-col gap-8">
+    <div class="xl:border-l-2 border-laranja-1 xl:pl-5 w-full xl:min-w-[300px] xl:max-w-[500px]">
+      <img class="rounded-xl object-cover w-full h-[200px] sm:h-[300px]" src="../img/capachos.jpg" alt="Apresentação Visual da textura do produto Capacho de Vinil.">
+    </div>
+    <div>
+      <h2 class="mb-3 font-serif text-white text-4xl">Vinil / PVC</h2>
+      <p class="mb-4 font-light text-xl text-white">Ideal para sujeiras secas e entradas comerciáis.</p>
+      <ul class="space-y-2">
+        <li class="font-light text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:bg-laranja-1 before:detalhe  hover:before:w-10 before:transition-all">Rápida Lavagem</li>
+        <li class="font-light text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:bg-laranja-1 before:detalhe  hover:before:w-10 before:transition-all">Poeiras</li>
+        <li class="font-light text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:bg-laranja-1 before:detalhe  hover:before:w-10 before:transition-all">Sujeiras Grossas</li>
+      </ul>
+    </div>
+  </section>
 
+  <!-- Polyagua -->
+  <section class="mb-12 container flex max-xl:flex-col gap-8">
+    <div class="xl:border-l-2 border-laranja-1 xl:pl-5 w-full xl:min-w-[300px] xl:max-w-[500px]">
+      <img class="rounded-xl object-cover w-full h-[200px] sm:h-[300px]" src="../img/capacho-poly.jpg" alt="Apresentação Visual da textura do produto Capacho de Vinil.">
+    </div>
+    <div>
+      <h2 class="mb-3 font-serif text-white text-4xl">Polyágua</h2>
+      <p class="mb-4 font-light text-xl text-white">Ideal para ambientes de piscina e entradas de condomínios.</p>
+      <ul class="space-y-2">
+        <li class="font-light text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:bg-laranja-1 before:detalhe  hover:before:w-10 before:transition-all">Rápida Lavagem</li>
+        <li class="font-light text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:bg-laranja-1 before:detalhe  hover:before:w-10 before:transition-all">Elegante</li>
+        <li class="font-light text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:bg-laranja-1 before:detalhe  hover:before:w-10 before:transition-all">Antiderrapante</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Personalizados -->
+  <section class="mb-12 container">
+    <div class="flex flex-col gap-8 xl:border-l-2 border-laranja-1 xl:pl-5 ">
+      <div class="flex max-xl:flex-col gap-8">
+        <div class="w-full xl:min-w-[300px] xl:max-w-[500px]">
+          <img class="rounded-xl object-cover w-full h-[200px] sm:h-[300px]" src="../img/capacho-personalizados.webp" alt="Apresentação Visual da textura do produto Capacho de Vinil.">
+        </div>
+        <div>
+          <h2 class="mb-3 font-serif text-white text-4xl">Personalize do Seu Jeito.</h2>
+          <p class="mb-4 font-light text-xl text-white">Você escolhe como vai ser seu capacho. Apenas moldura? Talvez com a logo da sua empresa,
+            ou até para o quarto do seu filho!</p>
+          <ul class="space-y-2">
+            <li class="font-light text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:bg-laranja-1 before:detalhe  hover:before:w-10 before:transition-all">Ambos os materiais</li>
+            <li class="font-light text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:bg-laranja-1 before:detalhe  hover:before:w-10 before:transition-all">Logo da Sua Preferência</li>
+            <li class="font-light text-white text-xl flex items-center gap-4 before:h-0.5 before:w-6 before:bg-laranja-1 before:detalhe  hover:before:w-10 before:transition-all">Desenvolvemos uma <br>pré-visualização do seu futuro capacho</li>
+          </ul>
+        </div>
+      </div>
+      <div class="overflow-x-auto snap-x snap-mandatory max-2xl:pb-4 grid grid-cols-[repeat(4,minmax(300px,1fr))] gap-4 sm:gap-8">
+        <div class="grid snap-center gap-4 bg-preto rounded-xl text-center">
+          <img class="justify-self-center rounded-xl" src="../img/capacho-personalizados.webp" alt="">
+        </div>
+        <div class="grid snap-center gap-4 bg-preto rounded-xl text-center">
+          <img class="justify-self-center rounded-xl" src="../img/capacho-personalizados.webp" alt="">
+        </div>
+        <div class="grid snap-center gap-4 bg-preto rounded-xl text-center">
+          <img class="justify-self-center rounded-xl" src="../img/capacho-personalizados.webp" alt="">
+        </div>
+        <div class="grid snap-center gap-4 bg-preto rounded-xl text-center">
+          <img class="justify-self-center rounded-xl" src="../img/capacho-personalizados.webp" alt="">
+        </div>
       </div>
     </div>
   </section>
@@ -177,7 +177,7 @@
     <div class="bg-grafite grid gap-8 lg:grid-cols-2 p-6 sm:p-12 rounded-2xl mb-8">
       <div class="flex gap-12 max-sm:flex-col max-sm:gap-4">
         <div>
-          <h3 class="text-white font-serif text-2xl mb-4 flex gap-2">Contato <img src="./img/whats-icon.svg" alt=""></h3>
+          <h3 class="text-white font-serif text-2xl mb-4 flex gap-2">Contato <img src="../img/whats-icon.svg" alt=""></h3>
           <p class="text-cinza">(47) 99138-9571
             <br>ou
             <br>(47) 3045-7504
@@ -185,14 +185,14 @@
           </p>
         </div>
         <div>
-          <h3 class="text-white font-serif text-2xl mb-4 flex gap-2">Horário de Atendimento <img src="./img/calendar.svg" alt=""></h3>
+          <h3 class="text-white font-serif text-2xl mb-4 flex gap-2">Horário de Atendimento <img src="../img/calendar.svg" alt=""></h3>
           <p class="text-cinza">venux_tapetes@hotmail.com
             <br>+55 21 9999-9999
           </p>
         </div>
       </div>
       <div class="justify-self-end self-center">
-        <img src="./img/venux-logo.svg" alt="Forest" class="mb-4">
+        <img src="../img/venux-logo.svg" alt="Forest" class="mb-4">
       </div>
     </div>
     <div class="text-gray-400 flex max-sm:flex-col-reverse justify-between items-center gap-8 text-sm">
@@ -202,7 +202,6 @@
       </ul>
     </div>
   </footer>
-
 
   <script>
     const mobileButton = document.getElementById('mobile-button');
