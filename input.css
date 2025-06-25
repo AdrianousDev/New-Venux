@@ -72,7 +72,7 @@
     color: #fff;
   }
   .btn {
-    @apply rounded-full bg-linear-to-b from-laranja-1 to-laranja-2 px-5 py-2 text-white transition animate-fade-in animate-1 cursor-pointer;
+    @apply rounded-full bg-linear-to-b from-laranja-1 to-laranja-2 px-5 py-2 text-white transition animate-fade-in animate-1 cursor-pointer hover:contrast-125;
     box-shadow: 0 1px 4px 1px rgba(var(--color-verde-200), 0.25),
       inset 0px -1px 2px var(--color-verde-200);
   }
