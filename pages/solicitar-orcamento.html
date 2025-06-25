@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../favicon.svg" type="image/svg">
+  <title>New Venux - Capachos Personalizados</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="../output.css" rel="stylesheet">
+</head>
+
+<body class="bg-preto font-sans text-white">
+
+  <!-- header -->
+  <header class="container flex items-center justify-between gap-8 p-8">
+    <a href="./">
+      <img src="../img/venux-logo.svg" alt="New Venux">
+    </a>
+    <nav id="mobile-menu" class="lg:block hidden items-center z-40 max-lg:fixed max-lg:w-full max-lg:inset-0">
+      <div class="fixed lg:hidden inset-0 bg-black/40 backdrop-blur-md"></div>
+      <ul class="text-white text-2xl max-lg:divide-y-2 max-lg:divide-white/10 max-lg:z-50 max-lg:absolute max-lg:p-8 max-lg:w-full lg:text-xl lg:flex lg:flex-wrap lg:gap-8">
+        <li class="animate-slide-in opacity-0 animate-1">
+          <a href="../" class="max-lg:hover:bg-white/10 lg:hover:underline lg:hover:underline-offset-8 decoration-laranja-1 p-4 lg:px-0 lg:py-2 block">Home</a>
+        </li>
+        <li class="animate-slide-in opacity-0 animate-2">
+          <a href="./produtos.html" class="max-lg:hover:bg-white/10 lg:hover:underline hover:underline-offset-8 decoration-laranja-1 p-4 lg:px-0 lg:py-2 block">Produtos</a>
+        </li>
+        <li class="animate-slide-in opacity-0 animate-3">
+          <a href="./sobre-nos.html" class="max-lg:hover:bg-white/10 lg:hover:underline underline-offset-8 decoration-laranja-1 p-4 lg:px-0 lg:py-2 block">Sobre Nós</a>
+        </li>
+        <li class="animate-slide-in opacity-0 animate-4">
+          <a href="./solicitar-orcamento.html" class="max-lg:hover:bg-white/10 text-laranja-1 lg:underline underline-offset-8 decoration-white p-4 lg:px-0 lg:py-2 block">Solicitar Orçamento</a>
+        </li>
+        <li class="animate-slide-in opacity-0 animate-4">
+          <a href="https://www.instagram.com/capachos.nv/" target="_blank" class="max-lg:hover:bg-white/10 lg:hover:underline hover:underline-offset-8 decoration-laranja-1 p-4 lg:px-0 lg:py-2 block">Instagram</a>
+        </li>
+      </ul>
+    </nav>
+    <button id="mobile-button" class="btn flex items-center gap-3 text-white py-2 lg:hidden">
+      Menu
+      <span class="h-3 w-4 flex flex-col justify-between *:h-0.5 *:rounded-md *:bg-laranja-1">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+    </button>
+  </header>
+
+  <!-- Sua porta, seu cartão de visita -->
+  <section id="do-seu-jeito" class="mb-12 sm:mb-16 py-12 sm:py-16 container">
+    <p class="mb-4 text-center text-laranja-1 uppercase tracking-widest text-sm">PERSONALIZADO DO SEU JEITO</p>
+    <h2 class="mb-8 mx-auto text-balance font-serif text-center max-w-screen-md text-white text-4xl sm:text-6xl">Sua Porta, Seu Cartão de Visitas</h2>
+    <div class="overflow-x-auto snap-x snap-mandatory pb-4 grid grid-cols-[repeat(4,minmax(300px,1fr))] gap-4 sm:gap-8">
+      <div class="grid snap-center gap-4 bg-grafite p-6 sm:p-8 rounded-xl text-center">
+        <img class="justify-self-center" src="../img/trena-icon.svg" alt="">
+        <h3 class="text-white text-2xl font-serif">Medidas Exatas</h3>
+        <p class="text-gray-300 text-balance text-xl">Tamanhos e recortes para qualquer área. Medidas tiradas no local desejado.</p>
+      </div>
+      <div class="grid snap-center gap-4 bg-grafite p-6 sm:p-8 rounded-xl text-center">
+        <img class="justify-self-center" src="../img/frete-icon.svg" alt="">
+        <h3 class="text-white text-2xl font-serif">Frete Grátis Itajaí e Região</h3>
+        <p class="text-gray-300 text-balance text-xl">Vendedores nas principais cidades do vale do Itajaí. Frete Grátis para a região.</p>
+      </div>
+      <div class="grid snap-center gap-4 bg-grafite p-6 sm:p-8 rounded-xl text-center">
+        <img class="justify-self-center" src="../img/durabilidade-icon.svg" alt="">
+        <h3 class="text-white text-2xl font-serif">Durabilidade Única</h3>
+        <p class="text-gray-300 text-balance text-xl">Personalização profissional. Camada de tinta mais profunda. Material Resistente.</p>
+      </div>
+      <div class="grid snap-center gap-4 bg-grafite p-6 sm:p-8 rounded-xl text-center">
+        <img class="justify-self-center" src="../img/pincel-icon.svg" alt="">
+        <h3 class="text-white text-2xl font-serif">Sua Logo, Sua marca</h3>
+        <p class="text-gray-300 text-balance text-xl">Layouts para pré-visualização e ajuda na escolha da personalização.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- contato -->
+  <section id="contato" class="container mb-12 sm:mb-16 grid gap-8 lg:grid-cols-2">
+    <div>
+      <h1 class="font-serif text-4xl text-laranja-1 mb-4">Nossos Contatos</h1>
+      <p class="text-gray-300 text-balance mb-8">Tem interesse em deixar seu ambiente mais limpo e elegante? Nos chame no whatsapp!</p>
+      <div class="grid gap-4">
+        <div>
+          <span class="h-0.5 w-6 detalhe inline-block"></span>
+          <h2 class="mb-2 text-2xl text-laranja-1 font-serif">WhatsApp</h2>
+          <p class="text-gray-300">47 99138-9571 ou 47 3045-7504</p>
+        </div>
+
+        <div>
+          <span class="h-0.5 w-6 detalhe inline-block"></span>
+          <h2 class="mb-2 text-2xl text-laranja-1 font-serif">Telefone</h2>
+          <p class="text-gray-300">47 3045-7504</p>
+        </div>
+
+        <div>
+          <span class="h-0.5 w-6 detalhe inline-block"></span>
+          <h2 class="mb-2 text-2xl text-laranja-1 font-serif">Email</h2>
+          <p class="text-gray-300">venux_tapetes@hotmail.com</p>
+        </div>
+      </div>
+    </div>
+    <form action="" class="grid gap-4 rounded-xl bg-grafite shadow-2xl p-4 lg:p-8">
+      <div class="grid gap-1">
+        <label for="nome" class="text-white">Nome</label>
+        <input type="text" id="nome" name="nome" class="input">
+      </div>
+      <div class="grid gap-4 sm:grid-cols-2">
+        <div class="grid gap-1">
+          <label for="cidade" class="text-white">Cidade</label>
+          <input type="text" id="cidade" name="cidade" class="input">
+        </div>
+        <div class="grid gap-1">
+          <label for="telefone" class="text-white">Telefone</label>
+          <input type="text" id="telefone" name="telefone" placeholder="(21) 00000-0000" class="input">
+        </div>
+      </div>
+      <div class="grid gap-1">
+        <label for="mensagem" class="text-white">Mensagem</label>
+        <textarea type="text" id="mensagem" name="mensagem" rows="5" class="input resize-none"></textarea>
+      </div>
+      <button class="btn inline-block place-self-start">Solicitar Orçamento</button>
+    </form>
+  </section>
+
+  <!-- footer -->
+  <footer class="container pb-8">
+    <div class="bg-grafite grid gap-8 lg:grid-cols-2 p-6 sm:p-12 rounded-2xl mb-8">
+      <div class="flex gap-12 max-sm:flex-col max-sm:gap-4">
+        <div>
+          <h3 class="text-white font-serif text-2xl mb-4 flex gap-2">Contato <img src="../img/whats-icon.svg" alt=""></h3>
+          <p class="text-cinza">(47) 99138-9571
+            <br>ou
+            <br>(47) 3045-7504
+            <br>venux_tapetes@hotmail.com
+          </p>
+        </div>
+        <div>
+          <h3 class="text-white font-serif text-2xl mb-4 flex gap-2">Horário de Atendimento <img src="../img/calendar.svg" alt=""></h3>
+          <p class="text-cinza">venux_tapetes@hotmail.com
+            <br>+55 21 9999-9999
+          </p>
+        </div>
+      </div>
+      <div class="justify-self-end self-center">
+        <img src="../img/venux-logo.svg" alt="Forest" class="mb-4">
+      </div>
+    </div>
+    <div class="text-gray-400 flex max-sm:flex-col-reverse justify-between items-center gap-8 text-sm">
+      <p>© 2025 New Venux. Todos os direitos reservados.</p>
+      <ul class="flex gap-8">
+        <li>Desenvolvido por <a href="https://www.linkedin.com/in/adrianousdev" target="_blank" class="hover:text-laranja-1 cursor-pointer underline">Adrianous Dev</a></li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <script>
+    const mobileButton = document.getElementById('mobile-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('flex');
+    });
+
+    mobileMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden');
+      mobileMenu.classList.remove('flex');
+    });
+
+  </script>
+</body>
+
+</html>
